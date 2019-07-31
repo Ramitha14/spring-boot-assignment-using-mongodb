@@ -25,7 +25,7 @@ public class TrackController {
     }
 
     @ApiOperation(value = "Insert/update a track", response = ResponseEntity.class)
-    @PostMapping
+    @PostMapping("trackservice")
     public ResponseEntity<?>saveTrack(@RequestBody Track track){
         ResponseEntity responseEntity;
         try{
